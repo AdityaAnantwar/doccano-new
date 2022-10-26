@@ -1,11 +1,11 @@
 <template>
   <v-app-bar app clipped-left>
     <slot name="leftDrawerIcon" />
-    <nuxt-link v-if="!isAuthenticated" to="/" style="line-height: 0">
+    <!-- <nuxt-link v-if="!isAuthenticated" to="/" style="line-height: 0">
       <img src="~/assets/icon.png" height="48" />
-    </nuxt-link>
+    </nuxt-link> -->
     <v-toolbar-title v-if="!isAuthenticated" class="ml-2 d-none d-sm-flex">
-      doccano
+      Crisis Tweet Annotation
     </v-toolbar-title>
     <v-btn
       v-if="isAuthenticated && isIndividualProject"
@@ -30,12 +30,12 @@
       {{ $t('header.projects') }}
     </v-btn>
     <v-menu v-if="!isAuthenticated" open-on-hover offset-y>
-      <template #activator="{ on }">
+      <!-- <template #activator="{ on }">
         <v-btn text v-on="on">
           {{ $t('home.demoDropDown') }}
           <v-icon>{{ mdiMenuDown }}</v-icon>
         </v-btn>
-      </template>
+      </template> -->
       <v-list>
         <v-list-item
           v-for="(item, index) in items"

@@ -76,8 +76,7 @@ export default {
       this.projectId,
       this.$route.query.page,
       this.$route.query.q,
-      this.$route.query.isChecked,
-      this.$route.query.ordering
+      this.$route.query.isChecked
     )
     const item = this.items.items[0]
     if (this.enableAutoLabeling) {

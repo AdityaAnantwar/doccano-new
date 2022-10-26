@@ -91,8 +91,7 @@ export default {
       this.projectId,
       this.$route.query.page,
       this.$route.query.q,
-      this.$route.query.isChecked,
-      this.$route.query.ordering
+      this.$route.query.isChecked
     )
     const doc = this.docs.items[0]
     await this.listSpan(doc.id)
