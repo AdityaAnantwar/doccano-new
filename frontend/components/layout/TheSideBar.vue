@@ -73,13 +73,13 @@ export default {
           icon: mdiHome,
           text: this.$t('projectHome.home'),
           link: '',
-          isVisible: true
+          isVisible: this.isProjectAdmin
         },
         {
           icon: mdiDatabase,
           text: this.$t('dataset.dataset'),
           link: 'dataset',
-          isVisible: true
+          isVisible: this.isProjectAdmin
         },
         {
           icon: mdiLabel,
