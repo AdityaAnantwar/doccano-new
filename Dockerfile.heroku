@@ -65,7 +65,7 @@ RUN python manage.py collectstatic --noinput \
  && chown -R doccano:doccano .
 
 VOLUME /data
-ENV DATABASE_URL="postgres://doccano_db_user:Jkej9A5GcozwtrADf6T2t3Mss8NnE7tT@dpg-cddsm3en6mps6fh50qh0-a.singapore-postgres.render.com/doccano_db"
+ENV DATABASE_URL="postgres://ppkfrdqqdskwqc:786af8ec6a0f594e892da46e50c252a82c08793553566fe5a5cf98e855d8ae87@ec2-52-23-131-232.compute-1.amazonaws.com:5432/d8312vcp0l99pp"
 
 ENV DEBUG="False"
 ENV STANDALONE="True"
